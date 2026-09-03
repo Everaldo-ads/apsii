@@ -1,6 +1,6 @@
 
 public class CD extends Produto implements InfoGerais {
-	public int numFaixas;
+	private int numFaixas;
 
 	public int getNumFaixas() {
 		return numFaixas;
@@ -11,7 +11,7 @@ public class CD extends Produto implements InfoGerais {
 	}
 
 	public String exibeInformacoes() {
-		return "Informações do CD"+"\nNome: "+this.nome+"\nPreço: "+this.preco+"\nNúmero de Faixas: "+this.numFaixas;
+		return "Informações do CD"+"\nNome: "+this.getNome()+"\nPreço: "+this.getPreco()+"\nNúmero de Faixas: "+this.numFaixas;
 		
 	}
 	

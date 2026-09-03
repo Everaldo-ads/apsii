@@ -7,19 +7,19 @@ public class Principal {
 		CD cd = new CD();
 		
 		System.out.print("Digite os dados do livro\n Nome: ");
-		livro.nome=teclado.nextLine();
+		livro.setNome(teclado.nextLine());
 		System.out.print("Preço: ");
-		livro.preco=teclado.nextDouble();
+		livro.setPreco(teclado.nextDouble());
 		teclado.nextLine();
 		System.out.print("Autor: ");
-		livro.autor=teclado.nextLine();
+		livro.setAutor(teclado.nextLine());
 		
 		System.out.print("Digite os dados do CD\nNome: ");
-		cd.nome=teclado.nextLine();
+		cd.setNome(teclado.nextLine());
 		System.out.print("Preço: ");
-		cd.preco=teclado.nextDouble();
+		cd.setPreco(teclado.nextDouble());
 		System.out.print("Número de faixas: ");
-		cd.numFaixas=teclado.nextInt();
+		cd.setNumFaixas(teclado.nextInt());
 		
 		System.out.println(cd.exibeInformacoes());
 	}
